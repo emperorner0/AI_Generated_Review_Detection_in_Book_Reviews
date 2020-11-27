@@ -1,3 +1,6 @@
 model_save/pytorch_model.bin
 Data/saved_weights.pt.backup
 Data/BERT_weights.pt
+bert_model_save/pytorch_model.bin
+bert_model_save/bert_model.pt
+bert_model_save/bert_toke.pt
