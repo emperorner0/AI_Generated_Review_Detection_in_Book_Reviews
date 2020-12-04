@@ -1,4 +1,4 @@
-# AI Generate Review Detection in Book Reviews
+# AI Generated Review Detection in Book Reviews
 
 ## Abstract
 
@@ -7,6 +7,10 @@ Online market stability is predicated upon consumer trust. Most online platforms
 We have utilized transfer learning techniques in order to design a robust detection system. Transfer learning is the simple act of storing knowledge gained solving one problem and applying it to another problem. We have achieved this by utilizing two cutting-edge NLP model architectures, OpenAI's GPT2, and Google AI's BERT. These models utilize an advanced Neural Network concept known as Transformer architecture which utilizes stacks of encoders and/or decoders to process text data in a way that can draw context from surrounding words in a sequence.
 
 We leveraged GPT2's specialization in text generation and BERT's ability to classify text. Using a set of 50,000 Amazon book reviews sampled from 51 million reviews we were able to fine-tune GPT2 to generate book reviews. We were able to then use the real reviews combined with the fake reviews to generate a labeled dataset of 100,000 reviews on which to train our BERT classifier. We were able to design an architecture that would work when layered on BERT to allow for greater classification abilities. With this architecture combined with a base layer of `BERT` we were able to achieve an 80% success rate in detecting our AI-generated reviews.
+
+## Workflow
+
+The bulk of the work for this project is contained within the `Classifier_with_BERT.ipynb` notebook. Review generation is contained within the `Review_Generator_GPT2.ipynb`. Both notebooks contain insights for the particular models.
 
 ## Consumer Trust 
 
@@ -264,3 +268,17 @@ Work with smaller models, such as [DistilBERT](https://arxiv.org/abs/1910.01108)
 ### 2. Further Tuning
 
 As discussed in several places already BERT greatly benefits from increased training epochs. This would allow us to train for more time and thus further tune the model towards correct predictions.
+
+## Repo Structure
+```
+├───.ipynb_checkpoints
+├───.vscode
+├───bert_model_save
+├───Data
+├───Images
+├───mlruns
+│   ├───.trash
+│   └───0
+├───model_save
+└───temp
+```
