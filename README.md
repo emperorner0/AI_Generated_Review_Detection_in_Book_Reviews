@@ -231,6 +231,26 @@ Before token sequences are passed to the decoder stack they are first embedded i
 
 Text generation is one of the main purposes of the `GPT2` model. We take a random sample of the reviews on which we trained the initial model. These are then broken down to a start of sentence token and then a 4 length token sequence. This sequence is the **Prompt**. The prompt is required for the model. The model will take the prompt and then use it to generate context-based upon it. The 4 tokens (5, if the start of sentence token is counter) sequence can then be tokenized and fed into the model so that it can generate responses to the prompts.
 
+## Results
+
+We were able to set up an architecture along with `GPT2` that allowed us to efficiently generate and store 50,000 reviews. This allowed us to gather a corpus of nearly 100,000 reviews, all labeled Real or Fake (0 or 1 respective).
+
+Building on `BERT` architecture we were able to devise a model that, trained for approximately 4 hours, would return results of **~80% accuracy** for our target class with minimal overfitting to the training data.
+
+### GPT2 Results
+<p align='center'>
+    <img src='Images/training_testing_gpt_loss.png' alt='Consumer Report'>
+</p>
+<br><br><br>
+
+### BERT Results
+<p align='center'>
+    <img src='Images/training_valid_acc.png' alt='Consumer Report'>
+    <img src='Images/training_acc.png' alt='Consumer Report'>
+    <img src='Images/heatmap.png' alt='Consumer Report'>
+    <img src='Images/normheatmap.png' alt='Consumer Report'>
+</p>
+
 ## Conculsion
 
 Consumer trust is of the utmost importance, and much like fiat currency, trust is what drives the market. Without customer trust, a platform is doomed. It is important to implement some sort of review sort and bot countermeasures in order to insure the stability of your open, semi-anonymous reviews.
