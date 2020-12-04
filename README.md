@@ -27,16 +27,16 @@ For a majority **(95.0%)** of the digital shoppers surveyed worldwide, that type
 *(emphasis added)*
 
 <p align='center'>
-    <img src='Images/consumer_trust.png' alt='Consumer Report'>
-    <img src='Images/reviews_graph.png' alt='Consumer Report'>
+    <img src='https://i.imgur.com/F5QhOq6.png' alt='Consumer Report'>
+    <img src='https://i.imgur.com/g86Jtzy.png' alt='Consumer Report'>
 </p>
 
 <br><br>
 As the pandemic has further transitioned our economy into an online and digital economy these consumer reviews hold even more weight. We can see the rapid growth of online shopping visits in just the first half of 2020 in this chart on Statista:
 
 <p align='center'>
-    <img src='Images/coronavirus_header.png' alt='Consumer Report'>
-    <img src='Images/ronashopping.png' alt='Consumer Report'>
+    <img src='https://i.imgur.com/C09FF2E.png' alt='Consumer Report'>
+    <img src='https://i.imgur.com/lip7Jar.png' alt='Consumer Report'>
 </p>
 
 
@@ -122,17 +122,14 @@ Before the paper NLP training involved text paring left-to-right, or left-to-rig
 ### Transformers
 **BERT** is based on a novel mechanism named **Transformer Architecture**. Transformers are models that are at a very base level a set of **encoder cells** and **decoder cells** that use **context** from sequences to provide output sequences. An encoder takes in a sequence and compiles it into a vector called **context**. The context is then passed to the decoder and the decoder uses this context vector to produce a sequence token by token. These encoders and decoders tend to be **Recurrent Neural Networks**. 
 
-<p align='center'>
-    <img src='Images/transformer_decoding.gif' alt='Consumer Report'>
-</p>
-
+[Transformer Flow](https://i.imgur.com/qx9vi72.mp4)
 [Image Courtesy](http://jalammar.github.io/illustrated-transformer/)
 
 #### Recurrent Neural Networks
 **Recurrent Neural Networks (RNN)** are a **directed graph** network that works on data through various temporal steps. A basic RNN takes *N* **input vectors** and will output *N* **output vectors** based on the input, and it does this operation by remembering context of the sequence and training based on past decisions. RNNs *remember* past decisions in **hidden state vectors** that influence the outputs of the network, and it does this to consider context of a sequence at a given time (temporal) step in the sequence. RNNs represents the ability for a past step to influence a future step and can increase the depth by adding additional hidden states or add additional nonlinear layers between inputs and hidden states.
 
 <p align='center'>
-    <img src='Images/RNN.png' alt='Consumer Report'>
+    <img src='https://i.imgur.com/tlHbaJj.png' alt='Consumer Report'>
 </p>
 
 
@@ -181,7 +178,7 @@ Self-attention is another branch of the attention mechanism. It relates the posi
 3. `BERT` converges slower than the sequence-to-sequence model since there are several extra layers stacked on top of the transformer architecture, but it outperforms other models at similar numbers of training steps.
 
 <p align='center'>
-    <img src='Images/bert.jpg' alt='Consumer Report'>
+    <img src='https://i.imgur.com/BrNOHPx.jpg' alt='Consumer Report'>
 </p>
 
 ## Model Architecture
@@ -214,7 +211,7 @@ It does this by scaling the output of the layers. Standardizing the activations 
 AdamW works by essentially decoupling the weight decay and the optimization step. This allows the two to optimize separately and therefore find an optimal rate for both. This results in faster convergence and better overall generalization for the models.
 
 <p align='center'>
-    <img src='Images/adamw.png' alt='Consumer Report'>
+    <img src='https://i.imgur.com/c7buAu7.png' alt='Consumer Report'>
 </p>
 
 ## GPT2
