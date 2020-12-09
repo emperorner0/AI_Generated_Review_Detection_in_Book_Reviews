@@ -8,7 +8,7 @@ We have utilized transfer learning techniques in order to design a robust detect
 
 We leveraged GPT2's specialization in text generation and BERT's ability to classify text. Using a set of 50,000 Amazon book reviews sampled from 51 million reviews we were able to fine-tune GPT2 to generate book reviews. We were able to then use the real reviews combined with the fake reviews to generate a labeled dataset of 100,000 reviews on which to train our BERT classifier. We were able to design an architecture that would work when layered on BERT to allow for greater classification abilities. With this architecture combined with a base layer of `BERT` we were able to achieve an 80% success rate in detecting our AI-generated reviews.
 
-## Workflow
+## Notebook Workflow
 
 * The main part of the project is contained within the `Classifier_with_BERT.ipynb` notebook.
 * Review generation is contained within the `Review_Generator_GPT2.ipynb` notebook.
