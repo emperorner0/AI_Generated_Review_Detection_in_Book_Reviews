@@ -10,7 +10,10 @@ We leveraged GPT2's specialization in text generation and BERT's ability to clas
 
 ## Workflow
 
-The bulk of the work for this project is contained within the `Classifier_with_BERT.ipynb` notebook. Review generation is contained within the `Review_Generator_GPT2.ipynb`. Both notebooks contain insights for the particular models.
+* The main part of the project is contained within the `Classifier_with_BERT.ipynb` notebook.
+* Review generation is contained within the `Review_Generator_GPT2.ipynb` notebook.
+
+Both notebooks contain insights into their particular model, thought the classifier notebook is the main notebook.
 
 ## Consumer Trust 
 
